@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Sample React App for ShiftLeft
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). It uses Typescript and 'react-bootstrap'. It is very much a work in progress. 
 
 ## Available Scripts
 
