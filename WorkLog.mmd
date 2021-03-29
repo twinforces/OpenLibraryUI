@@ -1,0 +1,32 @@
+* Setup Git Repo
+* Start Worklog
+* Start reading OpenLibrary docs. 
+	It's based on Markdown, and some Wiki thing called Infogami. Looks like the backing store is SOLR, since the schema is defined that way. The front end is the Wiki shit, brute forced from jQuery. 
+
+-  [ ]  Need to find react+webpack+bootstrap+unittesting boilerplate project
+	* Found this [one](https://github.com/HashemKhalifa/webpack-react-boilerplate)
+	* Here's [another](https://github.com/BackSpaceTech/react-bootstrap-boilerplate)
+	* First one has jest, enzyme, CSSModules, etc. built in. Second has bootstrap versions of every component from Bootstrap. First one is probably more show-off for an interview. 
+* trying to clone the first boilerplate via the command line fails because 
+	`dyld: Library not loaded: /usr/local/opt/openssl/lib/libcrypto.1.0.0.dylib`
+` I may need to download a combo updater and see if that fixes my laptop. in the meantime, perhaps I can use SourceTree to clone instead of using the command line. Ok source tree worked, but where did it clone to? Ah, SPSDevelopment. 
+* attempting to yarn.... It's reaching out to dark-star. That's the .yarnrc from ~. That's not a very interesting file, basically one line to set the registry. Deleting it and trying again. 
+* Upgrading yarn, running it again. 
+* I should maybe look around for a typescript boilerplate. 
+* webpack in boilerplate is only webpack 4, they're up to webpack 5 now. 
+* Here's a [typescript](https://github.com/el-davo/webpack-react-typescript-boilerplate) boilerplate.
+* react-bootstrap page says using their npm module is the best way to get their stuff installed. 
+* Digression into reading about React 16 and Fiber. They rewrote the virtual DOM algorithm, DK. 
+* Started reading about React17, which is a *no new features* release to make incremental upgrades easier later by allowing parallel versions of React to exist in the same SPA. 
+* LUNCH
+* Moving forward with the react-bootstrap and bootstrap modules.
+* Started reverse engineering the covers API, but found the [docs](https://openlibrary.org/dev/docs/api/covers) 
+* Looked at the SOLR schema, my ambition of writing a parser and code generator is moot. Easier to hand type one, because its a very weird structure. 
+* Tried to incrementally move the boilerplate to typescript, using hints from [this](https://felixgerschau.com/react-typescript-getting-started/#typescript-with-webpack). Might have been better to use "create-react-app" instead. 
+* Sister-in-law and wife got to house. Eventually, SIL went home. Fed wife dinner
+* Switched to create-react-app. Had to tweak the tsconfig slightly. 
+* Started working on a TS class for the model by cribbing from the SOLR schema. 
+* Track pad died. Probably weak batteries or iffy contacts. 
+* workaround track pad issue with Alkalines instead of rechargeable. 
+* Trackpad works with Alkalines. Could still be iffy contacts, maybe need cleaning. 
+* 
