@@ -2,6 +2,16 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). It uses Typescript and 'react-bootstrap'. It is very much a work in progress. 
 
+## TODO Rockstar Version
+- [] Make Swagger/OpenAPI input schema for "bookshelf" based on crappy OpenLibrary SOLR schema using SwaggerHub tooling.
+- [] Make NodeJS backend for "bookshelf" using OpenAPI generator/NodeJS Express [i.e.](https://www.thecodebuzz.com/swagger-openapi-documentation-node-js-and-express-api/)[course](https://egghead.io/courses/build-node-js-apis-with-openapi-spec-swagger)
+- [] Write OpenApi -> model class processor in Python and Mako templating. 
+- [] build UI Components
+
+## TODO Cut Bait Version
+- [] Layout some UI so Alex and I have something to talk about. 
+- 
+
 ## Available Scripts
 
 In the project directory, you can run:

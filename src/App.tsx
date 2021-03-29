@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import BookDisplay from './components/BookDisplay'
 
 interface AppProps {
   appname: string;
@@ -9,7 +10,15 @@ interface AppProps {
 class App extends Component<AppProps> {
 constructor(props:AppProps) {
     super(props);
-    this.state = {};
+    this.state = {books:[]};
+  }
+
+/** internal method to render the book list*/
+ renderBookList() {
+ /** simple internal stateless component declared on the fly*/
+  let BookRender = (book) => { return (<BookDisplay book={book} />)};
+  result = this.state.books.map( (book) => (<BookRender book = {book}>);
+  return result;
   }
   render() {
       const { appname, message } = this.props;
@@ -21,14 +30,7 @@ constructor(props:AppProps) {
         <p>
           {appname} {message}
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        {this.renderBookList())}
       </header>
     </div>
   );}
