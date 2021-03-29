@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App appname='openlibrary' message='sample for shiftleft'/>
   </React.StrictMode>,
   document.getElementById('root')
 );

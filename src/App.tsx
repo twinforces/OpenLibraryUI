@@ -1,14 +1,25 @@
-import React from 'react';
+import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+interface AppProps {
+  appname: string;
+  message?: string;
+}
+class App extends Component<AppProps> {
+constructor(props:AppProps) {
+    super(props);
+    this.state = {};
+  }
+  render() {
+      const { appname, message } = this.props;
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          {appname} {message}
         </p>
         <a
           className="App-link"
@@ -20,7 +31,7 @@ function App() {
         </a>
       </header>
     </div>
-  );
+  );}
 }
 
 export default App;
